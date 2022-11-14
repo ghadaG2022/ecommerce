@@ -1,0 +1,2 @@
+file:src/main/resources/features/8slider.feature:3:8
+file:src/main/resources/features/6social.feature:13

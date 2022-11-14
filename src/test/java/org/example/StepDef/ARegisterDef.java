@@ -42,7 +42,7 @@ public class ARegisterDef {
 
     @When("user enter email \"test@example.com\" field")
     public void user_enter_email_field() {
-        RegisterPOMObject.emailfield().sendKeys("111@example.com");
+        RegisterPOMObject.emailfield().sendKeys("1111@example.com");
 
     }
 

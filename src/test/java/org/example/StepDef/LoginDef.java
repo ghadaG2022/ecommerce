@@ -20,7 +20,7 @@ public class LoginDef {
 
     @When("user login with valid email and password and click login button")
     public void user_login_with_valid_email_and_password(){
-        LoginPOMObject.emailinput().sendKeys("111@example.com");
+        LoginPOMObject.emailinput().sendKeys("1111@example.com");
         LoginPOMObject.passwordinput().sendKeys("P@ssw0rd");
         LoginPOMObject.submitbutton().click();
     }

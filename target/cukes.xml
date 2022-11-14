@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="19" time="632.108">
+<testcase classname="F01_Register | users could register with new accounts" name="guest user could register with valid data successfully" time="67.622">
+<system-out><![CDATA[Given user go to register page..............................................passed
+When user select gender type................................................passed
+And user enter first name "automation" and last name "tester................passed
+And user enter date of birth................................................passed
+And user enter email "test@example.com" field...............................passed
+And user fills Password fields "P@ssw0rd" "P@ssw0rd"........................passed
+And user clicks on register button..........................................passed
+Then success message is displayed...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F02_Login | users could use login functionality to use their accounts" name="user could not login with valid email and password" time="35.615">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user login with invalid email and password and click login button......passed
+Then user should not be able to login.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F02_Login | users could use login functionality to use their accounts" name="user could login with valid email and password" time="24.32">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user login with valid email and password and click login button........passed
+Then user should be able to login...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="currencies" name="Filter BY Euro showing Products in Euro" time="19.795">
+<system-out><![CDATA[Given user go to home page..................................................passed
+When user select euro.......................................................passed
+Then 4 products in euro will be displayed...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Hover to computer" name="user should be able to select subcatageory" time="34.102">
+<system-out><![CDATA[Given user in home page.....................................................passed
+When user hover to computer.................................................passed
+And user select Desktops....................................................passed
+Then user should go to desktop page.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="social" name="user opens facebook link" time="70.373">
+<system-out><![CDATA[Given user in home page2....................................................passed
+When user click facebook icon...............................................passed
+Then new tab with facebook should be opened.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="social" name="user opens twitter link" time="61.147">
+<system-out><![CDATA[Given user in home page2....................................................passed
+When user click twitter icon................................................passed
+Then new tab with twitter should be opened..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="social" name="user open rss" time="26.247">
+<failure message="Expected condition failed: waiting for number of open windows to be 2 (tried for 7 second(s) with 500 milliseconds interval)&#10;Build info: version: '4.1.1', revision: 'e8fcc2cecf'&#10;System info: host: '5MWTQAZG9E8FH4L', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_201'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\ADMINI~1.5MW\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:57871}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57871/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 3775893cfe0f34dbb65e5b8748f86cd9" type="org.openqa.selenium.TimeoutException"><![CDATA[Given user in home page2....................................................passed
+When user click rssicon.....................................................passed
+Then new tab with rss shoud be opened.......................................failed
+
+StackTrace:
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for number of open windows to be 2 (tried for 7 second(s) with 500 milliseconds interval)
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: '5MWTQAZG9E8FH4L', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\ADMINI~1.5MW\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:57871}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57871/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3775893cfe0f34dbb65e5b8748f86cd9
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at org.example.page.socialPom.getcurrenturl(socialPom.java:22)
+	at org.example.StepDef.social.open_rss(social.java:62)
+	at ✽.new tab with rss shoud be opened(file:///C:/Users/Administrator.5MWTQAZG9E8FH4L/IdeaProjects/untitled17/src/main/resources/features/6social.feature:16)
+]]></failure>
+</testcase>
+<testcase classname="social" name="user open youtube" time="64.328">
+<system-out><![CDATA[Given user in home page2....................................................passed
+When user click youtubeicon.................................................passed
+Then new tab with youtube should be opened..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="wishlist" name="add o wish list" time="25.274">
+<system-out><![CDATA[Given user in home page3....................................................passed
+When user click add to wishlist.............................................passed
+Then sucsmessage should be showing..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="wishlist" name="add o wish list 2" time="24.123">
+<system-out><![CDATA[Given user in home page3....................................................passed
+When user click add to wishlist.............................................passed
+Then sucsmessage should be showing..........................................passed
+And quantity bigger than zero...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="slider" name="click on slider" time="20.299">
+<failure message="The following asserts failed:&#10;&#9;expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[Given user in home page4....................................................passed
+When click on first slide...................................................passed
+Then new tab will open......................................................failed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at org.example.StepDef.slide.tabopen(slide.java:32)
+	at ✽.new tab will open(file:///C:/Users/Administrator.5MWTQAZG9E8FH4L/IdeaProjects/untitled17/src/main/resources/features/8slider.feature:6)
+]]></failure>
+</testcase>
+<testcase classname="slider" name="click on slider2" time="17.434">
+<failure message="The following asserts failed:&#10;&#9;expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[Given user in home page4....................................................passed
+When click on second slide..................................................passed
+Then new tab will open......................................................failed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at org.example.StepDef.slide.tabopen(slide.java:32)
+	at ✽.new tab will open(file:///C:/Users/Administrator.5MWTQAZG9E8FH4L/IdeaProjects/untitled17/src/main/resources/features/8slider.feature:11)
+]]></failure>
+</testcase>
+<testcase classname="search" name="search name" time="21.308">
+<system-out><![CDATA[When insert product "book" insearch.........................................passed
+Then url contains "book" after submit.......................................passed
+And all products contain "book".............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="search" name="search name 2" time="19.35">
+<system-out><![CDATA[When insert product "laptop" insearch.......................................passed
+Then url contains "laptop" after submit.....................................passed
+And all products contain "laptop"...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="search" name="search name 3" time="19.139">
+<system-out><![CDATA[When insert product "nike" insearch.........................................passed
+Then url contains "nike" after submit.......................................passed
+And all products contain "nike".............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="search" name="search sku" time="26.874">
+<system-out><![CDATA[When insert productsku "SCI_FAITH" insearch.................................passed
+And click link..............................................................passed
+Then product contains in description "SCI_FAITH"............................passed
+]]></system-out>
+</testcase>
+<testcase classname="search" name="search sku 2" time="25.823">
+<system-out><![CDATA[When insert productsku "APPLE_CAM" insearch.................................passed
+And click link..............................................................passed
+Then product contains in description "APPLE_CAM"............................passed
+]]></system-out>
+</testcase>
+<testcase classname="search" name="search sku 3" time="25.588">
+<system-out><![CDATA[When insert productsku "SF_PRO_11" insearch.................................passed
+And click link..............................................................passed
+Then product contains in description "SF_PRO_11"............................passed
+]]></system-out>
+</testcase>
+</testsuite>
